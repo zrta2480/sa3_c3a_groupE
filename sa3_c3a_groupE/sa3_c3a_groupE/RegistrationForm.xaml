@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sa3_c3a_groupE.RegistrationForm">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5">
+                <Label Text="Name: "></Label>
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="First Name"></Entry>
+                    <Entry Placeholder="Last Name"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Age"></Label>
+                    <Entry Placeholder="age"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Gender"></Label>
+                    <RadioButton Content="Male" />
+                    <RadioButton Content="Female" />
+                    <RadioButton Content="Other" />
+                </StackLayout>
+                
+                <?Conversion stuff?>
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Height" x:Name="user_height" Keyboard="Numeric" ></Entry>
+                    <Picker Title="Unit" x:Name="height_unit" WidthRequest="110" SelectedIndexChanged="hu_SelectedIndexChanged"></Picker>
+                    <Label Text="--" x:Name="converted_h" FontSize="Medium"></Label>
+                    <Label Text="--" x:Name="converted_h_unit" FontSize="Medium"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Weight" x:Name="user_weight" Keyboard="Numeric"></Entry>
+                    <Picker Title="Unit" x:Name="weight_unit" WidthRequest="90" SelectedIndexChanged="wu_SelectedIndexChanged"></Picker>
+                    <Label Text="--" x:Name="converted_w" FontSize="Medium"></Label>
+                    <Label Text="--" x:Name="converted_w_unit" FontSize="Medium"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Salary" x:Name="user_salary" Keyboard="Numeric" WidthRequest="200"></Entry>
+                    <Picker Title="Currency" x:Name="salary_unit" WidthRequest="120" SelectedIndexChanged="su_SelectedIndexChanged"></Picker>
+                    
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Php" FontSize="Medium"></Label>
+                    <Label Text="--" x:Name="converted_s" FontSize="Medium"></Label>
+                </StackLayout>
+
+                <Button Text="Submit"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
