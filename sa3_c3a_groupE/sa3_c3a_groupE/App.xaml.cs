@@ -6,11 +6,18 @@ namespace sa3_c3a_groupE
 {
     public partial class App : Application
     {
+        string dbPath => FileAccessHelper.GetLocalFilePath("people.db3");
+
+        public static PersonRepository PersonRepo { get; private set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            PersonRepo = new PersonRepository(dbPath);
+
+            MainPage = new NavigationPage(new MainPage() { Text = dbPath, });
+           
         }
 
         protected override void OnStart()

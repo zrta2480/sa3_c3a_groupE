@@ -14,3 +14,4 @@ C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE\obj\Debug\netstan
 C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE\obj\Debug\netstandard2.0\sa3_c3a_groupE.dll
 C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE\obj\Debug\netstandard2.0\ref\sa3_c3a_groupE.dll
 C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE\obj\Debug\netstandard2.0\sa3_c3a_groupE.pdb
+C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE\obj\Debug\netstandard2.0\DisplayRegistered.xaml.g.cs

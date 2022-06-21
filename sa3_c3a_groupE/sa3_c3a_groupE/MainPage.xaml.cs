@@ -10,6 +10,11 @@ namespace sa3_c3a_groupE
 {
     public partial class MainPage : ContentPage
     {
+        public string Text
+        {
+            get { return textLabel.Text; }
+            set { textLabel.Text = value; }
+        }
         public MainPage()
         {
             InitializeComponent();
@@ -18,6 +23,11 @@ namespace sa3_c3a_groupE
         private async void Register_Form_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegistrationForm());
+        }
+
+        private async void Display_Registered_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DisplayRegistered());
         }
     }
 }

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sa3_c3a_groupE.DisplayRegistered">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                
+                <Button Text="Display All" VerticalOptions="StartAndExpand" Clicked="display_all_onlclicked"></Button>
+                <CollectionView x:Name="peopleList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Grid.Row="0" 
+                                       Text="ID: " />
+                                <Label Grid.Column="1" Grid.Row="0"
+                                       Text="{Binding Id}"  />
+                                <Label Grid.Column="0" Grid.Row="1"
+                                       Text="First Name: " />
+                                <Label Grid.Column="1" Grid.Row="1" 
+                                       Text="{Binding FirstName}" />
+                                <Label Grid.Column="0" Grid.Row="2"
+                                       Text="Last Name: " />
+                                <Label Grid.Column="1" Grid.Row="2"
+                                       Text="{Binding LastName}" />
+                                <Label Grid.Column="0" Grid.Row="3"
+                                       Text="Age: " />
+                                <Label Grid.Column="1" Grid.Row="3"
+                                       Text="{Binding Age}" />
+                                <Label Grid.Column="0" Grid.Row="4"
+                                       Text="Gender: " />
+                                <Label Grid.Column="1" Grid.Row="4"
+                                       Text="{Binding Gender}" />
+                                <Label Grid.Column="0" Grid.Row="5"
+                                       Text="Initial Height: " />
+                                <Label Grid.Column="1" Grid.Row="5"
+                                       Text="{Binding InitialHeight}" />
+                                <Label Grid.Column="0" Grid.Row="6"
+                                       Text="Converted Height: " />
+                                <Label Grid.Column="1" Grid.Row="6"
+                                       Text="{Binding ConvertedHeight}" />
+                                <Label Grid.Column="0" Grid.Row="7"
+                                       Text="Initial Weight: " />
+                                <Label Grid.Column="1" Grid.Row="7"
+                                       Text="{Binding InitialWeight}" />
+                                <Label Grid.Column="0" Grid.Row="8"
+                                       Text="Converted Weight: " />
+                                <Label Grid.Column="1" Grid.Row="8"
+                                       Text="{Binding ConvertedWeight}" />
+                                <Label Grid.Column="0" Grid.Row="9"
+                                       Text="Initial Salary: " />
+                                <Label Grid.Column="1" Grid.Row="9"
+                                       Text="{Binding InitialSalary}" />
+                                <Label Grid.Column="0" Grid.Row="10"
+                                       Text="Converted Salary: " />
+                                <Label Grid.Column="1" Grid.Row="10"
+                                       Text="{Binding ConvertedSalary}" />
+                                
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
