@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace sa3_c3a_groupE
 {
@@ -16,7 +17,7 @@ namespace sa3_c3a_groupE
 
             PersonRepo = new PersonRepository(dbPath);
 
-            MainPage = new NavigationPage(new MainPage() { Text = dbPath, });
+            MainPage = new NavigationPage(new MainPage());
            
         }
 

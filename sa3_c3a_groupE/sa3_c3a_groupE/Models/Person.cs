@@ -8,7 +8,7 @@ namespace sa3_c3a_groupE.Models
     [Table("people")]
     public class Person
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey, Unique]
         public int Id { get; set; }
         [MaxLength(250)]
         public string FirstName { get; set; }

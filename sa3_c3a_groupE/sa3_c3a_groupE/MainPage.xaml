@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sa3_c3a_groupE.MainPage">
+             x:Class="sa3_c3a_groupE.MainPage"
+             >
 
-    <StackLayout VerticalOptions="CenterAndExpand" Padding="60">
-        <Label x:Name="textLabel"
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-        <Label Text="Registration"></Label>
-        <Button Text="Register" Clicked="Register_Form_OnClicked"></Button>
-        <Button Text="Display Registered Users" Clicked="Display_Registered_OnClicked"></Button>
+    <StackLayout BackgroundColor="LightBlue"  Padding="60">
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Registration" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+            <Button Text="Register" Clicked="Register_Form_OnClicked"></Button>
+            <Button Text="Display Registered Users" Clicked="Display_Registered_OnClicked"></Button>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

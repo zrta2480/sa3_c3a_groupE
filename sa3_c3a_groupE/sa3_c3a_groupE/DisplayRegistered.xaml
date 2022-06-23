@@ -4,13 +4,19 @@
              x:Class="sa3_c3a_groupE.DisplayRegistered">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout BackgroundColor="LightBlue" Padding="5">
+                <StackLayout>
+                    <Entry Placeholder="Enter ID number" x:Name="entered_id" Keyboard="Numeric" />
+                    <Button Text="Delete User Record" Clicked="Delete_User_Onclicked" />
+                    <Label x:Name="statusMessage" Text="---" BackgroundColor="White" TextColor="Black"/>
+                </StackLayout>
+                <Button Text="Display All" VerticalOptions="StartAndExpand" Clicked="Display_All_Onlclicked"></Button>
                 
-                <Button Text="Display All" VerticalOptions="StartAndExpand" Clicked="display_all_onlclicked"></Button>
                 <CollectionView x:Name="peopleList">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid Padding="10">
+                            <Frame BackgroundColor="Black" Padding="10" CornerRadius="10" BorderColor="GhostWhite">
+                                <Grid Padding="10">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
@@ -67,9 +73,11 @@
                                        Text="{Binding ConvertedSalary}" />
                                 
                             </Grid>
+                            </Frame>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

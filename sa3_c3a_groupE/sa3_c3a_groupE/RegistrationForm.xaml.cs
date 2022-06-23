@@ -13,7 +13,7 @@ namespace sa3_c3a_groupE
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegistrationForm : ContentPage
     {
-        
+        private int person_iD;
         private string person_firstName;
         private string person_lastName;
         private int person_age;
@@ -37,25 +37,9 @@ namespace sa3_c3a_groupE
             salary_unit.Items.Add("Japanese yen");
             salary_unit.Items.Add("KSA riyal");
             salary_unit.Items.Add("UAE dirham");
-        }
-        /*
-        private void extract_entry()
-        {
-            if(string.IsNullOrEmpty(user_firstName.Text) && string.IsNullOrEmpty(user_lastName.Text) && string.IsNullOrEmpty(user_age.Text))
-            {
-                confirm_submit = true;
-            }
-            else
-            {
-                person_firstName = user_firstName.Text;
-                person_lastName = user_lastName.Text;
-                person_age = int.Parse(user_age.Text);
-                confirm_submit = false;
-                confirm_submit = true;
-            }
             
         }
-        */
+        
         private void hu_SelectedIndexChanged(object sender, EventArgs e)
         {
             string initial_h_unit = "--";
@@ -92,6 +76,7 @@ namespace sa3_c3a_groupE
                     h_result = 0;
                     break;
             }
+            
             person_inital_height = entered_height + initial_h_unit;
             person_converted_height = h_result + converted_h_unit;
             converted_h.Text = person_converted_height;
@@ -134,7 +119,7 @@ namespace sa3_c3a_groupE
                     w_result = 0;
                     break;
             }
-
+            
             person_initial_weight = entered_weight + initial_h_unit;
             converted_w.Text = w_result + converted_w_unit;
             person_converted_weight = converted_w.Text;
@@ -183,8 +168,8 @@ namespace sa3_c3a_groupE
             }
             s_result = Math.Round(s_result, 2);
 
-            person_inital_salary = entered_salary + selected_s_unit;
-            converted_s.Text = "Php" + s_result;
+            person_inital_salary = entered_salary + " " + selected_s_unit;
+            converted_s.Text = "Php " + s_result;
             person_converted_salary = converted_s.Text;
         }
 
@@ -213,7 +198,7 @@ namespace sa3_c3a_groupE
 
         private bool validate_info()
         {
-            if (string.IsNullOrEmpty(user_firstName.Text) || string.IsNullOrEmpty(user_lastName.Text) || string.IsNullOrEmpty(user_age.Text))
+            if (string.IsNullOrEmpty(user_firstName.Text) || string.IsNullOrEmpty(user_lastName.Text) || string.IsNullOrEmpty(user_age.Text) || string.IsNullOrEmpty(user_iD.Text))
             {
                 return false;
             }
@@ -243,16 +228,18 @@ namespace sa3_c3a_groupE
             if (validate_info())
             {
                 statusMessage.Text = "";
+                person_iD = (int)double.Parse(user_iD.Text);
                 person_firstName = user_firstName.Text;
                 person_lastName = user_lastName.Text;
-                person_age = int.Parse(user_age.Text);
-                DisplayAlert("Success!", "Information has been submitted", "Ok");
-                App.PersonRepo.basicInfo(person_lastName, person_firstName, person_age, person_gender);
+                person_age = (int)double.Parse(user_age.Text);
+                App.PersonRepo.basicInfo(person_iD, person_lastName, person_firstName, person_age, person_gender);
                 App.PersonRepo.getHeight(person_inital_height, person_converted_height);
                 App.PersonRepo.getWeight(person_initial_weight, person_converted_weight);
                 App.PersonRepo.getSalary(person_inital_salary, person_converted_salary);
                 App.PersonRepo.AddNewPerson();
                 statusMessage.Text = App.PersonRepo.StatusMessage;
+                DisplayAlert("Alert", App.PersonRepo.StatusMessage, "Ok");
+                
             }
             else
             {

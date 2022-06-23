@@ -10,6 +10,7 @@ namespace sa3_c3a_groupE
     {
         SQLiteConnection conn;
         public string StatusMessage { get; set; }
+        private int person_iD;
         private string person_firstName;
         private string person_lastName;
         private int person_age;
@@ -28,8 +29,9 @@ namespace sa3_c3a_groupE
             conn.CreateTable<Person>();
         }
 
-        public void basicInfo(string last, string first, int age, string gender)
+        public void basicInfo(int iD, string last, string first, int age, string gender)
         {
+            person_iD = iD;
             person_lastName = last;
             person_firstName = first;
             person_age = age;
@@ -61,6 +63,7 @@ namespace sa3_c3a_groupE
             {
                 result = conn.Insert(new Person
                 {
+                    Id = person_iD,
                     FirstName = person_firstName,
                     LastName = person_lastName,
                     Age = person_age,
@@ -72,7 +75,7 @@ namespace sa3_c3a_groupE
                     ConvertedWeight = person_converted_weight,
                     ConvertedSalary = person_converted_salary
                 });
-                StatusMessage = string.Format("{0} record(s) added [Name: {1})", result, person_lastName);
+                StatusMessage = string.Format("{0} record(s) added [ID: {1}, Name: {2}]", result, person_iD, person_lastName);
                 //StatusMessage = string.Format("{0} record(s) added [Name: {1})", result, name);
             }
             catch (Exception ex)
@@ -97,7 +100,19 @@ namespace sa3_c3a_groupE
             return new List<Person>();
         }
 
-        
+        public void DeleteItem(int id)
+        {
+            int result = 0;
+            try
+            {
+                result = conn.Delete(new Person { Id = id });
+                StatusMessage = string.Format("{0} record(s) deleted [ID: {1}]", result, id);
+            }
+            catch(Exception ex)
+            {
+                StatusMessage = string.Format("Failed to delete data. {0}", ex.Message);
+            }
+        }
 
     }
 }

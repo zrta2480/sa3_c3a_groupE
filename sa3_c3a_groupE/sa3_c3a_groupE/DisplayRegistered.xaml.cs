@@ -18,13 +18,27 @@ namespace sa3_c3a_groupE
             InitializeComponent();
         }
 
-        public void display_all_onlclicked(object sender, EventArgs eventArgs)
+        public void Display_All_Onlclicked(object sender, EventArgs eventArgs)
         {
             List<Person> people = App.PersonRepo.GetAllPeople();
             peopleList.ItemsSource = people;
-                
+            
         }
 
-        
+        public void Delete_User_Onclicked(object sender, EventArgs eventArgs)
+        {
+            int retrieved_id = 0;
+            if(string.IsNullOrEmpty(entered_id.Text))
+            {
+                statusMessage.Text = "[Field is empty]";
+            }
+            else
+            {
+                retrieved_id = int.Parse(entered_id.Text);
+                App.PersonRepo.DeleteItem(retrieved_id);
+                statusMessage.Text = App.PersonRepo.StatusMessage;
+                Display_All_Onlclicked(sender, eventArgs);
+            }
+        }
     }
 }
