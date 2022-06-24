@@ -34,7 +34,7 @@ namespace sa3_c3a_groupE
             }
             else
             {
-                retrieved_id = int.Parse(entered_id.Text);
+                retrieved_id = (int)double.Parse(entered_id.Text);
                 App.PersonRepo.DeleteItem(retrieved_id);
                 statusMessage.Text = App.PersonRepo.StatusMessage;
                 Display_All_Onlclicked(sender, eventArgs);

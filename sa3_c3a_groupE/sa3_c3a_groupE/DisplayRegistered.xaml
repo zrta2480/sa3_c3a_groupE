@@ -8,7 +8,7 @@
                 <StackLayout>
                     <Entry Placeholder="Enter ID number" x:Name="entered_id" Keyboard="Numeric" />
                     <Button Text="Delete User Record" Clicked="Delete_User_Onclicked" />
-                    <Label x:Name="statusMessage" Text="---" BackgroundColor="White" TextColor="Black"/>
+                    <Label x:Name="statusMessage" Text="---" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
                 </StackLayout>
                 <Button Text="Display All" VerticalOptions="StartAndExpand" Clicked="Display_All_Onlclicked"></Button>
                 

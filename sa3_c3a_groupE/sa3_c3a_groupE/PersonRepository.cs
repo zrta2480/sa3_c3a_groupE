@@ -91,6 +91,7 @@ namespace sa3_c3a_groupE
             try
             {
                 return conn.Table<Person>().ToList();
+                
             }
             catch (Exception ex)
             {
@@ -100,6 +101,7 @@ namespace sa3_c3a_groupE
             return new List<Person>();
         }
 
+        
         public void DeleteItem(int id)
         {
             int result = 0;
