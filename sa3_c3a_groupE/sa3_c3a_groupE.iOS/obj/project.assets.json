@@ -1457,11 +1457,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\sa3_c3a_groupE.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\sa3_c3a_groupE.iOS.csproj",
       "projectName": "sa3_c3a_groupE.iOS",
-      "projectPath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\sa3_c3a_groupE.iOS.csproj",
+      "projectPath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\sa3_c3a_groupE.iOS.csproj",
       "packagesPath": "C:\\Users\\zetha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\obj\\",
+      "outputPath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1482,8 +1482,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj": {
-              "projectPath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj"
+            "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj": {
+              "projectPath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj"
             }
           }
         }
