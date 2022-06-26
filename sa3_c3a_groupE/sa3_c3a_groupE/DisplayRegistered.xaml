@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sa3_c3a_groupE.DisplayRegistered">
+             x:Class="sa3_c3a_groupE.DisplayRegistered"
+             Title="Display, Search, Delete">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout BackgroundColor="LightBlue" Padding="5">
                 <StackLayout>
-                    <Entry Placeholder="Enter ID number" x:Name="entered_id" Keyboard="Numeric" PlaceholderColor="White"/>
+                    <Entry Placeholder="Enter ID number" x:Name="entered_id" Keyboard="Numeric" 
+                           PlaceholderColor="White" TextColor="Black"/>
                     <StackLayout Orientation="Horizontal">
                         <Button Text="Delete User Record" Clicked="Delete_User_Onclicked" WidthRequest="175" />
                         <Button Text="Find User Record" Clicked="Find_User_Onclicked" WidthRequest="188"/>

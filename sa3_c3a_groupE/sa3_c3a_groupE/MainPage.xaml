@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="sa3_c3a_groupE.MainPage"
-             >
+             BackgroundImageSource="generic_bg.jpg"
+             NavigationPage.HasNavigationBar="False">
 
-    <StackLayout BackgroundColor="LightBlue"  Padding="60">
+    <StackLayout  Padding="60">
         <StackLayout VerticalOptions="CenterAndExpand">
             <Label Text="Registration" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
             <Button Text="Register" Clicked="Register_Form_OnClicked"></Button>
