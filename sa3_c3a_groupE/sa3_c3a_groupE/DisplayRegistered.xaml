@@ -7,7 +7,11 @@
             <StackLayout BackgroundColor="LightBlue" Padding="5">
                 <StackLayout>
                     <Entry Placeholder="Enter ID number" x:Name="entered_id" Keyboard="Numeric" PlaceholderColor="White"/>
-                    <Button Text="Delete User Record" Clicked="Delete_User_Onclicked" />
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Delete User Record" Clicked="Delete_User_Onclicked" WidthRequest="175" />
+                        <Button Text="Find User Record" Clicked="Find_User_Onclicked" WidthRequest="188"/>
+                    </StackLayout>
+                    
                     <Label x:Name="statusMessage" Text="---" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
                 </StackLayout>
                 <Button Text="Display All" VerticalOptions="StartAndExpand" Clicked="Display_All_Onlclicked"></Button>

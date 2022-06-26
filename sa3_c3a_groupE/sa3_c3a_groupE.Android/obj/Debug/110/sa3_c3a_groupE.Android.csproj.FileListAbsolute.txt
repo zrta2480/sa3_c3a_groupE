@@ -582,3 +582,4 @@ C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE.Android\obj\Debug
 C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE.Android\obj\Debug\110\android\assets\System.Buffers.dll
 C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE.Android\obj\Debug\110\android\assets\System.Memory.dll
 C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE.Android\obj\Debug\110\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\zetha\Documents\sa3-c3a\sa3_c3a_groupE\sa3_c3a_groupE.Android\obj\Debug\110\res\drawable\generic_bg.jpg

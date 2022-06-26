@@ -2383,11 +2383,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\sa3_c3a_groupE.Android.csproj",
+      "projectUniqueName": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\sa3_c3a_groupE.Android.csproj",
       "projectName": "sa3_c3a_groupE.Android",
-      "projectPath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\sa3_c3a_groupE.Android.csproj",
+      "projectPath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\sa3_c3a_groupE.Android.csproj",
       "packagesPath": "C:\\Users\\zetha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\obj\\",
+      "outputPath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2408,8 +2408,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj": {
-              "projectPath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj"
+            "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj": {
+              "projectPath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj"
             }
           }
         }

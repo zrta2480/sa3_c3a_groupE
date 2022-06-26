@@ -101,7 +101,20 @@ namespace sa3_c3a_groupE
             return new List<Person>();
         }
 
-        
+        public List<Person> GetSpecificPerson(int id)
+        {
+            try
+            {
+                return conn.Table<Person>().Where(x => x.Id == id).ToList();
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+
+            return new List<Person>();
+        }
+ 
         public void DeleteItem(int id)
         {
             int result = 0;

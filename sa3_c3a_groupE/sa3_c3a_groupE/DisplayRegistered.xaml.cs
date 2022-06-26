@@ -25,6 +25,30 @@ namespace sa3_c3a_groupE
             
         }
 
+        public void Find_User_Onclicked(object sender, EventArgs eventArgs)
+        {
+            int retrieved_id = 0;
+            if (string.IsNullOrEmpty(entered_id.Text))
+            {
+                statusMessage.Text = "[Field is empty]";
+            }
+            else
+            {
+                retrieved_id = (int)double.Parse(entered_id.Text);
+                List<Person> people = App.PersonRepo.GetSpecificPerson(retrieved_id);
+                peopleList.ItemsSource = people;
+                if(people.Count < 1)
+                {
+                    statusMessage.Text = "[No Matching User ID]";
+                }
+                else
+                {
+                    statusMessage.Text = App.PersonRepo.StatusMessage;
+                }
+                //statusMessage.Text = App.PersonRepo.StatusMessage;
+            }
+        }
+
         public void Delete_User_Onclicked(object sender, EventArgs eventArgs)
         {
             int retrieved_id = 0;

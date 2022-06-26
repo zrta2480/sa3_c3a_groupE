@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LGf3rBPtUpzZ1BCHmV/+1AwKOSe45Nr//wBjAqSNn+hBg2kIkOgzOTFweh91goCgem8BL561pOPcKcQi30y4JA==",
+  "dgSpecHash": "S3BAKF1JeV2waYA0Q4onmkZsKripurW7HOvu+AMkjucJVVJYb8p/tkaLNeaqhsBAG3aN9i7eH0EGM5dSCQnMXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj",
+  "projectFilePath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zetha\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\zetha\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
