@@ -37,7 +37,7 @@ namespace sa3_c3a_groupE
             salary_unit.Items.Add("Japanese yen");
             salary_unit.Items.Add("KSA riyal");
             salary_unit.Items.Add("UAE dirham");
-            
+            salary_unit.Items.Add("None");
         }
         
         private void hu_SelectedIndexChanged(object sender, EventArgs e)
@@ -143,34 +143,61 @@ namespace sa3_c3a_groupE
                 entered_salary = float.Parse(user_salary.Text);
                 
             }
-            
+
 
             switch (selected_s_unit)
             {
                 case "US dollar":
                     s_result = entered_salary * 54.08; // USD conversion rate at the time of coding
+                    s_result = Math.Round(s_result, 2);
+
+                    person_inital_salary = entered_salary + " " + selected_s_unit;
+                    converted_s.Text = "Php " + s_result;
+                    person_converted_salary = "Php " + s_result;
                     break;
                 case "UK pound":
                     s_result = entered_salary * 66.21; // UK Pound conversion rate at the time of coding
+                    s_result = Math.Round(s_result, 2);
+
+                    person_inital_salary = entered_salary + " " + selected_s_unit;
+                    converted_s.Text = "Php " + s_result;
+                    person_converted_salary = "Php " + s_result;
                     break;
                 case "Japanese yen":
                     s_result = entered_salary * 0.4; // JP Yen conversion rate at the time of coding
+                    s_result = Math.Round(s_result, 2);
+
+                    person_inital_salary = entered_salary + " " + selected_s_unit;
+                    converted_s.Text = "Php " + s_result;
+                    person_converted_salary = "Php " + s_result;
                     break;
                 case "KSA riyal":
                     s_result = entered_salary * 14.41; // SR conversion rate at the time of coding
+                    s_result = Math.Round(s_result, 2);
+
+                    person_inital_salary = entered_salary + " " + selected_s_unit;
+                    converted_s.Text = "Php " + s_result;
+                    person_converted_salary = "Php " + s_result;
                     break;
                 case "UAE dirham":
                     s_result = entered_salary * 14.72; // UAE Dirham conversion rate at the time of coding
+                    s_result = Math.Round(s_result, 2);
+
+                    person_inital_salary = entered_salary + " " + selected_s_unit;
+                    converted_s.Text = "Php " + s_result;
+                    person_converted_salary = "Php " + s_result;
+                    break;
+                case "None":
+                    person_inital_salary = "Php " + entered_salary;
+                    converted_s.Text = "None";
+                    person_converted_salary = "None";
                     break;
                 default:
                     s_result = 0;
                     break;
             }
-            s_result = Math.Round(s_result, 2);
 
-            person_inital_salary = entered_salary + " " + selected_s_unit;
-            converted_s.Text = "Php " + s_result;
-            person_converted_salary = "Php " + s_result;
+
         }
 
         private void Gender_RadioBtn(object sender, CheckedChangedEventArgs eventArgs)
