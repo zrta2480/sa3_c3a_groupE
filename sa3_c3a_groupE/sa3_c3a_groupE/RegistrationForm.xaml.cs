@@ -232,6 +232,9 @@ namespace sa3_c3a_groupE
                 person_firstName = user_firstName.Text;
                 person_lastName = user_lastName.Text;
                 person_age = (int)double.Parse(user_age.Text);
+                hu_SelectedIndexChanged(sender, e);
+                wu_SelectedIndexChanged(sender, e);
+                su_SelectedIndexChanged(sender, e);
                 App.PersonRepo.basicInfo(person_iD, person_lastName, person_firstName, person_age, person_gender);
                 App.PersonRepo.getHeight(person_inital_height, person_converted_height);
                 App.PersonRepo.getWeight(person_initial_weight, person_converted_weight);
