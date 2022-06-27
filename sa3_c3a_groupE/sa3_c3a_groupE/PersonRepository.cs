@@ -105,6 +105,7 @@ namespace sa3_c3a_groupE
         {
             try
             {
+                StatusMessage = "[Found User!]";
                 return conn.Table<Person>().Where(x => x.Id == id).ToList();
             }
             catch (Exception ex)
