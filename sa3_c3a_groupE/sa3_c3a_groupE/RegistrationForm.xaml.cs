@@ -77,9 +77,9 @@ namespace sa3_c3a_groupE
                     break;
             }
             
-            person_inital_height = entered_height + initial_h_unit;
-            person_converted_height = h_result + converted_h_unit;
-            converted_h.Text = person_converted_height;
+            person_inital_height = entered_height + " " + initial_h_unit;
+            person_converted_height = h_result + " " + converted_h_unit;
+            converted_h.Text = h_result + " " + converted_h_unit;
         }
 
         private void wu_SelectedIndexChanged(object sender, EventArgs e)
@@ -120,9 +120,9 @@ namespace sa3_c3a_groupE
                     break;
             }
             
-            person_initial_weight = entered_weight + initial_h_unit;
-            converted_w.Text = w_result + converted_w_unit;
-            person_converted_weight = converted_w.Text;
+            person_initial_weight = entered_weight + " " + initial_h_unit;
+            converted_w.Text = w_result + " " + converted_w_unit;
+            person_converted_weight = w_result + " " + converted_w_unit;
         }
 
         private void su_SelectedIndexChanged(object sender, EventArgs e)
@@ -170,7 +170,7 @@ namespace sa3_c3a_groupE
 
             person_inital_salary = entered_salary + " " + selected_s_unit;
             converted_s.Text = "Php " + s_result;
-            person_converted_salary = converted_s.Text;
+            person_converted_salary = "Php " + s_result;
         }
 
         private void Gender_RadioBtn(object sender, CheckedChangedEventArgs eventArgs)

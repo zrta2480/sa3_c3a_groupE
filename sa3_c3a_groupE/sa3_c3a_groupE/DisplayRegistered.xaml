@@ -41,49 +41,49 @@
                                     <ColumnDefinition Width="Auto" />
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Grid.Row="0" 
+                                <Label Grid.Column="0" Grid.Row="0" TextColor="White"
                                        Text="ID: " />
-                                <Label Grid.Column="1" Grid.Row="0"
+                                <Label Grid.Column="1" Grid.Row="0" TextColor="White"
                                        Text="{Binding Id}"  />
-                                <Label Grid.Column="0" Grid.Row="1"
+                                <Label Grid.Column="0" Grid.Row="1" TextColor="White"
                                        Text="First Name: " />
-                                <Label Grid.Column="1" Grid.Row="1" 
+                                <Label Grid.Column="1" Grid.Row="1" TextColor="White"
                                        Text="{Binding FirstName}" />
-                                <Label Grid.Column="0" Grid.Row="2"
+                                <Label Grid.Column="0" Grid.Row="2" TextColor="White"
                                        Text="Last Name: " />
-                                <Label Grid.Column="1" Grid.Row="2"
+                                <Label Grid.Column="1" Grid.Row="2" TextColor="White"
                                        Text="{Binding LastName}" />
-                                <Label Grid.Column="0" Grid.Row="3"
+                                <Label Grid.Column="0" Grid.Row="3" TextColor="White"
                                        Text="Age: " />
-                                <Label Grid.Column="1" Grid.Row="3"
+                                <Label Grid.Column="1" Grid.Row="3" TextColor="White"
                                        Text="{Binding Age}" />
-                                <Label Grid.Column="0" Grid.Row="4"
+                                <Label Grid.Column="0" Grid.Row="4" TextColor="White"
                                        Text="Gender: " />
-                                <Label Grid.Column="1" Grid.Row="4"
+                                <Label Grid.Column="1" Grid.Row="4" TextColor="White"
                                        Text="{Binding Gender}" />
-                                <Label Grid.Column="0" Grid.Row="5"
+                                <Label Grid.Column="0" Grid.Row="5" TextColor="White"
                                        Text="Initial Height: " />
-                                <Label Grid.Column="1" Grid.Row="5"
+                                <Label Grid.Column="1" Grid.Row="5" TextColor="White"
                                        Text="{Binding InitialHeight}" />
-                                <Label Grid.Column="0" Grid.Row="6"
+                                <Label Grid.Column="0" Grid.Row="6" TextColor="White"
                                        Text="Converted Height: " />
-                                <Label Grid.Column="1" Grid.Row="6"
+                                <Label Grid.Column="1" Grid.Row="6" TextColor="White"
                                        Text="{Binding ConvertedHeight}" />
-                                <Label Grid.Column="0" Grid.Row="7"
+                                <Label Grid.Column="0" Grid.Row="7" TextColor="White"
                                        Text="Initial Weight: " />
-                                <Label Grid.Column="1" Grid.Row="7"
+                                <Label Grid.Column="1" Grid.Row="7" TextColor="White"
                                        Text="{Binding InitialWeight}" />
-                                <Label Grid.Column="0" Grid.Row="8"
+                                <Label Grid.Column="0" Grid.Row="8" TextColor="White"
                                        Text="Converted Weight: " />
-                                <Label Grid.Column="1" Grid.Row="8"
+                                <Label Grid.Column="1" Grid.Row="8" TextColor="White"
                                        Text="{Binding ConvertedWeight}" />
-                                <Label Grid.Column="0" Grid.Row="9"
+                                <Label Grid.Column="0" Grid.Row="9" TextColor="White"
                                        Text="Initial Salary: " />
-                                <Label Grid.Column="1" Grid.Row="9"
+                                <Label Grid.Column="1" Grid.Row="9" TextColor="White"
                                        Text="{Binding InitialSalary}" />
-                                <Label Grid.Column="0" Grid.Row="10"
+                                <Label Grid.Column="0" Grid.Row="10" TextColor="White"
                                        Text="Converted Salary: " />
-                                <Label Grid.Column="1" Grid.Row="10"
+                                <Label Grid.Column="1" Grid.Row="10" TextColor="White"
                                        Text="{Binding ConvertedSalary}" />
                                 
                             </Grid>
