@@ -2,76 +2,88 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="sa3_c3a_groupE.RegistrationForm"
-             Title="Register New Person">
+             Title="Register New Person"
+             Visual="Material">
+
     <ContentPage.Content>
         <ScrollView>
-           
-            <StackLayout Padding="5" BackgroundColor="LightBlue">
-                <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
+            <StackLayout Padding="10" BackgroundColor="LightBlue">
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="25">
                     <StackLayout>
-                        <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Vertical" Margin="0,0,0,25">
                             <Label Text="ID: " FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
-                            
                             <Entry Placeholder="ID Number" x:Name="user_iD" Keyboard="Numeric" 
                                    BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black"/>
                         </StackLayout>
-                
-                        <StackLayout Orientation="Vertical">
+
+                        <StackLayout Orientation="Vertical"  Margin="0,0,0,25">
                             <Label Text="Name: " FontSize="Medium" FontAttributes="Bold" TextColor="Black" ></Label>
-                            <Entry Placeholder="First Name" x:Name="user_firstName" 
+
+                                <Entry Placeholder="First Name" x:Name="user_firstName" 
                                    BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black"></Entry>
-                            <Entry Placeholder="Last Name" x:Name="user_lastName" 
+
+
+
+                                <Entry Placeholder="Last Name" x:Name="user_lastName" 
                                    BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black"></Entry>
+
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal">
+                        
+                        <StackLayout Orientation="Vertical" Margin="0,0,0,25">
                             <Label Text="Age: " FontSize="Medium" FontAttributes="Bold" TextColor="Black"></Label>
-                            <Entry Placeholder="age" Keyboard="Numeric" WidthRequest="100" x:Name="user_age" 
+
+                                <Entry Placeholder="Age" Keyboard="Numeric" WidthRequest="10" x:Name="user_age" 
                                    BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black"></Entry>
+
                         </StackLayout>
-                        <StackLayout Orientation="Vertical"
+
+                        <StackLayout Orientation="Vertical" Margin="0,0,0,25"
                                 RadioButtonGroup.GroupName="gender">
                             <Label Text="Gender" FontSize="Medium" FontAttributes="Bold" TextColor="Black"></Label>
                             <RadioButton Content="Male" Value="Male" CheckedChanged="Gender_RadioBtn" x:Name="gender_male" 
-                                         TextColor="Black" BackgroundColor="DarkGray" />
+                                         TextColor="Black" CornerRadius="10" BackgroundColor="LightCyan"/>
                             <RadioButton Content="Female" Value="Female" CheckedChanged="Gender_RadioBtn" x:Name="gender_female"
-                                         TextColor="Black" BackgroundColor="DarkGray"/>
+                                         TextColor="Black" CornerRadius="10" BackgroundColor="LightCyan"/>
                             <RadioButton Content="Other" Value="Others" CheckedChanged="Gender_RadioBtn" x:Name="gender_other"
-                                         TextColor="Black" BackgroundColor="DarkGray"/>
+                                         TextColor="Black" CornerRadius="10" BackgroundColor="LightCyan"/>
                             <Label Text="--" x:Name="chosen_gender" TextColor="Black"></Label>
                         </StackLayout>
 
                         <?Conversion Stuff?>
-                        <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,5">
                             <Entry Placeholder="Height" x:Name="user_height" Keyboard="Numeric" 
-                                   BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black"></Entry>
-                            <Picker Title="Unit" x:Name="height_unit" WidthRequest="110" SelectedIndexChanged="hu_SelectedIndexChanged" 
+                                   BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black" WidthRequest="90"></Entry>
+                            <Picker Title="Unit" x:Name="height_unit" WidthRequest="130" SelectedIndexChanged="hu_SelectedIndexChanged" 
                                     BackgroundColor="LightCyan" TextColor="DarkGray" TitleColor="DarkGray"></Picker>
-                            <Label Text="--" x:Name="converted_h" FontSize="Medium" TextColor="Black"></Label>
-
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal">
+                        <Label Text="--" x:Name="converted_h" FontSize="Medium" TextColor="Black"></Label>
+
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,5">
                             <Entry Placeholder="Weight" x:Name="user_weight" Keyboard="Numeric" 
-                                   BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black"></Entry>
-                            <Picker Title="Unit" x:Name="weight_unit" WidthRequest="90" SelectedIndexChanged="wu_SelectedIndexChanged" 
+                                   BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black" WidthRequest="90"></Entry>
+                            <Picker Title="Unit" x:Name="weight_unit" WidthRequest="130" SelectedIndexChanged="wu_SelectedIndexChanged" 
                                     BackgroundColor="LightCyan"  TextColor="DarkGray" TitleColor="DarkGray"></Picker>
-                            <Label Text="--" x:Name="converted_w" FontSize="Medium" TextColor="Black"></Label>
-
                         </StackLayout>
+                        <Label Text="--" x:Name="converted_w" FontSize="Medium" TextColor="Black"></Label>
+                        
                         <StackLayout Orientation="Horizontal">
-                            <Entry Placeholder="Salary" x:Name="user_salary" Keyboard="Numeric" WidthRequest="200"
+
+                                <Entry Placeholder="Salary" x:Name="user_salary" Keyboard="Numeric" WidthRequest="200"
                                    BackgroundColor="LightCyan" PlaceholderColor="DarkGray" TextColor="Black"></Entry>
-                            <Picker Title="Currency" x:Name="salary_unit" WidthRequest="120" SelectedIndexChanged="su_SelectedIndexChanged" 
+
+
+
+                                <Picker Title="Currency" x:Name="salary_unit" WidthRequest="145" SelectedIndexChanged="su_SelectedIndexChanged" 
                                      BackgroundColor="LightCyan" TextColor="DarkGray" TitleColor="DarkGray"></Picker>
 
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-
                             <Label Text="--" x:Name="converted_s" FontSize="Medium" TextColor="Black"></Label>
                         </StackLayout>
                     </StackLayout>
                 </Frame>
  
-                <Button Text="Submit" Clicked="submitButton_Onclicked"></Button>
+                <Button Text="Submit" Clicked="submitButton_Onclicked" Margin="0,10,0,0"></Button>
                 <Label x:Name="statusMessage" ></Label>
             </StackLayout>
         </ScrollView>

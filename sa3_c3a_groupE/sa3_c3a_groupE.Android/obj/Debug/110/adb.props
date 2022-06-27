@@ -1,2 +1,2 @@
-AdbTarget=-s R58R82Q36FW
+AdbTarget=-s emulator-5554
 AdbOptions=
