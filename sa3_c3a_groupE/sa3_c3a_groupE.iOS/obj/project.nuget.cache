@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uLaHjFzWM5y/3sVVK4NDT4Vfl9jljxytlCepX1iFaX7INsIm7jGHCarsjQnsOjPcuFA9N6O590TLfLmmpajZiA==",
+  "dgSpecHash": "SXATOGhWRXsF3X8+a5EyOGL4NNLgkSx1mmC59irg1qGYLpn4iZvUvmSAYmMGdzsOD+jdnfEkTrk1EGMM+K0Quw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\sa3_c3a_groupE.iOS.csproj",
+  "projectFilePath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.iOS\\sa3_c3a_groupE.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zetha\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\zetha\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",

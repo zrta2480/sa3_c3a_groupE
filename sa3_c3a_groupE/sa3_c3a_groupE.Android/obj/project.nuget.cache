@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jqz6uQRu1zIPZfjYiZGp/gZ/pBXnbqomeqgJ8E4MGhUMOv7BdXhvAYgcNPY6kuu7A9gQqyWPmjs60c3ZKA6EFA==",
+  "dgSpecHash": "5XES9Ug8BnQ++wqkxbg+iKbFjTGESwz/Q3eNxDFRVxKz08shmeiKvMe4e0IX2VIaik+ev7dDMHK7djTjqcTxxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zetha\\Documents\\sa3-c3a\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\sa3_c3a_groupE.Android.csproj",
+  "projectFilePath": "C:\\Users\\zetha\\Documents\\GitHub\\sa3_c3a_groupE\\sa3_c3a_groupE\\sa3_c3a_groupE.Android\\sa3_c3a_groupE.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zetha\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\zetha\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
